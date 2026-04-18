@@ -1,0 +1,62 @@
+/* App.css */
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+.counter-wrapper {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 2.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  min-width: 280px;
+}
+
+.counter-title {
+  font-size: 13px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.counter-display {
+  font-size: 72px;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.btn:active { transform: scale(0.94); }
+.btn:disabled { opacity: 0.3; cursor: not-allowed; }
+
+.btn.increment { background: #E1F5EE; color: #0F6E56; border-color: #9FE1CB; margin-left: 220px; }
+.btn.increment:hover { background: #9FE1CB; }
+
+.btn.decrement { background: #FCEBEB; color: #A32D2D; border-color: #F7C1C1; }
+.btn.decrement:hover:not(:disabled) { background: #F7C1C1; }
